@@ -1,0 +1,26 @@
+{ns hl7-fhir-us-codex-radiation-therapy.codexrt-radiotherapy-dose-prescribed-to-volume,
+ import #{zen.fhir
+          hl7-fhir-r4-core.Quantity
+          hl7-fhir-r4-core.Reference
+          hl7-fhir-r4-core.positiveInt
+          hl7-fhir-us-codex-radiation-therapy.codexrt-radiotherapy-volume},
+ schema {:zen.fhir/version "0.6.14",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-dose-prescribed-to-volume",
+         :require #{:volume},
+         :type zen/map,
+         :zen/desc "Dose parameters prescribed for one radiotherapy volume.",
+         :keys {:volume {:confirms #{hl7-fhir-r4-core.Reference/schema
+                                     zen.fhir/Reference},
+                         :fhir/flags #{:MS},
+                         :zen.fhir/reference {:refers #{hl7-fhir-us-codex-radiation-therapy.codexrt-radiotherapy-volume/schema}},
+                         :zen/desc "Volume targeted by the prescribed dose"},
+                :fractionDose {:confirms #{hl7-fhir-r4-core.Quantity/schema},
+                               :fhir/flags #{:MS},
+                               :zen/desc "Radiation Dose Prescribed per Fraction"},
+                :totalDose {:confirms #{hl7-fhir-r4-core.Quantity/schema},
+                            :fhir/flags #{:MS},
+                            :zen/desc "Total Radiation Dose Prescribed"},
+                :fractions {:confirms #{hl7-fhir-r4-core.positiveInt/schema},
+                            :fhir/flags #{:MS},
+                            :zen/desc "Number of Prescribed Fractions"}}}}

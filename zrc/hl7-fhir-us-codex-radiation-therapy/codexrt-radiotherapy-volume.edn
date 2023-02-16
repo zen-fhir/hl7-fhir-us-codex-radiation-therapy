@@ -1,0 +1,14 @@
+{ns hl7-fhir-us-codex-radiation-therapy.codexrt-radiotherapy-volume,
+ import #{zen.fhir hl7-fhir-us-mcode.mcode-radiotherapy-volume},
+ schema {:zen.fhir/version "0.6.14",
+         :confirms #{zen.fhir/Resource
+                     hl7-fhir-us-mcode.mcode-radiotherapy-volume/schema},
+         :zen/tags #{zen.fhir/profile-schema zen/schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-volume",
+         :require #{:identifier},
+         :type zen/map,
+         :zen/desc "A volume of the body used in Radiotherapy planning or treatment delivery. This corresponds to the Conceptual Volume in DICOM.",
+         :keys {:identifier {:type zen/vector,
+                             :slicing {:slices {}},
+                             :minItems 2}},
+         :zen.fhir/type "BodyStructure"}}

@@ -1,0 +1,16 @@
+{ns hl7-fhir-us-codex-radiation-therapy.value-set.codex-radiotherapy-applicator-types-vs,
+ import #{zen.fhir},
+ value-set {:zen/tags #{zen.fhir/value-set},
+            :zen/desc "Applicator Types Used in Brachytherapy",
+            :zen.fhir/version "0.6.14",
+            :fhir/code-systems #{{:fhir/url "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/codex-radiotherapy-applicator-types-cs",
+                                  :zen.fhir/content :bundled}
+                                 {:fhir/url "http://snomed.info/sct",
+                                  :zen.fhir/content :bundled}},
+            :uri "http://hl7.org/fhir/us/codex-radiation-therapy/ValueSet/codex-radiotherapy-applicator-types-vs",
+            :version "1.0.0-ballot",
+            :ftr {:module "ig",
+                  :source-urls ["node_modules/hl7.fhir.us.codex-radiation-therapy"],
+                  :source-type :igs,
+                  :ftr-path "ftr",
+                  :tag "init"}}}

@@ -1,0 +1,14 @@
+{ns hl7-fhir-us-codex-radiation-therapy.codexrt-radiotheraphy-treatment-device,
+ import #{zen.fhir
+          hl7-fhir-us-codex-radiation-therapy.codexrt-radiotheraphy-treatment-device-model
+          hl7-fhir-us-codex-radiation-therapy.codexrt-radiotheraphy-treatment-device-manufacturer},
+ schema {:zen.fhir/version "0.6.14",
+         :zen/tags #{zen/schema zen.fhir/structure-schema},
+         :zen.fhir/profileUri "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotheraphy-treatment-device",
+         :require #{:manufacturer :model},
+         :type zen/map,
+         :zen/desc "The device used for delivering the Radiotherapy. This can be a treatment machine or auxiliary device, for example a positioning device.\nCould be used for a LINAC (external beam) or an Afterloader (brachytherapy).   The device is specified\nby its manufacturer and model number.",
+         :keys {:manufacturer {:confirms #{hl7-fhir-us-codex-radiation-therapy.codexrt-radiotheraphy-treatment-device-manufacturer/schema},
+                               :fhir/extensionUri "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotheraphy-treatment-device-manufacturer"},
+                :model {:confirms #{hl7-fhir-us-codex-radiation-therapy.codexrt-radiotheraphy-treatment-device-model/schema},
+                        :fhir/extensionUri "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotheraphy-treatment-device-model"}}}}
