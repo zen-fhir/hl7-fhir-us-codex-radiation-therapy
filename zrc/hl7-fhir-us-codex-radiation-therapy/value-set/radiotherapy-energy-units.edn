@@ -2,7 +2,7 @@
  import #{zen.fhir},
  value-set {:zen/tags #{zen.fhir/value-set},
             :zen/desc "Unit to characterize the Energy spectrum used in Radiotherapy.\nFor electrons, the maximum energy is given in MeV.\nFor photons, the maximum acceleration voltage is given in MV or kV, although those are not units of energy.",
-            :zen.fhir/version "0.6.21-2",
+            :zen.fhir/version "0.6.22",
             :fhir/code-systems #{{:fhir/url "http://unitsofmeasure.org",
                                   :zen.fhir/content :bundled}},
             :uri "http://hl7.org/fhir/us/codex-radiation-therapy/ValueSet/radiotherapy-energy-units",
