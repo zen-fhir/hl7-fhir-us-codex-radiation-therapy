@@ -1,6 +1,6 @@
 {ns hl7-fhir-us-codex-radiation-therapy.codexrt-dicom-reference,
  import #{zen.fhir hl7-fhir-r4-core.Coding hl7-fhir-r4-core.id},
- schema {:zen.fhir/version "0.6.25-1",
+ schema {:zen.fhir/version "0.6.27",
          :zen/tags #{zen/schema zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-dicom-reference",
          :require #{:instanceUid},
