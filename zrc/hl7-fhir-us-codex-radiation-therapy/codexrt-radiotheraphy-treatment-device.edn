@@ -2,8 +2,10 @@
  import #{zen.fhir
           hl7-fhir-us-codex-radiation-therapy.codexrt-radiotheraphy-treatment-device-model
           hl7-fhir-us-codex-radiation-therapy.codexrt-radiotheraphy-treatment-device-manufacturer},
- schema {:zen.fhir/version "0.6.27",
-         :zen/tags #{zen/schema zen.fhir/structure-schema},
+ schema {:zen.fhir/version "0.6.28",
+         :zen/tags #{zen.fhir/extension
+                     zen/schema
+                     zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotheraphy-treatment-device",
          :require #{:manufacturer :model},
          :type zen/map,
