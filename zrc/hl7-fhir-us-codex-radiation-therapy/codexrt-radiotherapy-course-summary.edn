@@ -4,7 +4,7 @@
           hl7-fhir-us-codex-radiation-therapy.codexrt-radiotheraphy-treatment-device
           hl7-fhir-us-codex-radiation-therapy.codexrt-radiotherapy-energy-or-isotope
           hl7-fhir-us-codex-radiation-therapy.codexrt-radiotheraphy-treatment-applicator-type},
- schema {:zen.fhir/version "0.6.29",
+ schema {:zen.fhir/version "0.6.29-22",
          :confirms #{hl7-fhir-us-mcode.mcode-radiotherapy-course-summary/schema
                      zen.fhir/Resource},
          :zen/tags #{zen.fhir/profile-schema zen/schema},
