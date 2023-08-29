@@ -2,14 +2,13 @@
  import #{zen.fhir
           hl7-fhir-r4-core.Quantity
           hl7-fhir-r4-core.CodeableConcept},
- schema {:fhir/polymorphic true,
-         :zen.fhir/version "0.6.30-14",
+ schema {:zen.fhir/version "0.6.30-14",
          :zen/tags #{zen.fhir/extension
                      zen/schema
                      zen.fhir/structure-schema},
          :zen.fhir/profileUri "http://hl7.org/fhir/us/codex-radiation-therapy/StructureDefinition/codexrt-radiotherapy-energy-or-isotope",
          :type zen/map,
          :zen/desc "The radiation energy used for radiotherapy. The energy spectrum is characterized\nby the maximum energy, the maximum accelaration voltage, or the used isotope.",
+         :fhir/polymorphic true
          :keys {:CodeableConcept {:confirms #{hl7-fhir-r4-core.CodeableConcept/schema}},
-                :Quantity {:confirms #{hl7-fhir-r4-core.Quantity/schema}}},
-         :exclusive-keys #{#{:CodeableConcept :Quantity}}}}
+                :Quantity {:confirms #{hl7-fhir-r4-core.Quantity/schema}}},}}
