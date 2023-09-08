@@ -2,7 +2,7 @@
  import #{zen.fhir},
  value-set {:zen/tags #{zen.fhir/value-set},
             :zen/desc "Applicator Types Used in Brachytherapy",
-            :zen.fhir/version "0.6.31",
+            :zen.fhir/version "0.6.32",
             :fhir/code-systems #{{:fhir/url "http://hl7.org/fhir/us/codex-radiation-therapy/CodeSystem/codex-radiotherapy-applicator-types-cs",
                                   :zen.fhir/content :bundled}
                                  {:fhir/url "http://snomed.info/sct",
